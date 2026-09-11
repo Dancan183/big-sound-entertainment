@@ -1,3 +1,7 @@
+/* =========================
+   BASE & GLOBAL STYLES
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,27 +24,19 @@ body {
     );
 }
 
-
 /* =========================
    HEADER
 ========================= */
 
 header {
     width: 100%;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 20px 7%;
-
     position: relative;
-
     z-index: 10;
 }
-
 
 /* =========================
    LOGO
@@ -48,19 +44,12 @@ header {
 
 .logo img {
     width: 70px;
-
     height: 70px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 2px solid rgba(255, 255, 255, 0.3);
-
-    box-shadow:
-        0 0 20px rgba(30, 120, 255, 0.4);
+    box-shadow: 0 0 20px rgba(30, 120, 255, 0.4);
 }
-
 
 /* =========================
    NAVIGATION
@@ -68,80 +57,47 @@ header {
 
 nav {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
 }
 
-
 nav a {
     color: white;
-
     text-decoration: none;
-
     font-size: 15px;
-
     font-weight: 600;
-
     padding: 10px 16px;
-
     border-radius: 8px;
-
     background: rgba(255, 255, 255, 0.08);
-
     border: 1px solid rgba(255, 255, 255, 0.18);
-
     transition: all 0.3s ease;
-
     backdrop-filter: blur(8px);
 }
 
-
 nav a:hover {
     color: white;
-
-    background: linear-gradient(
-        90deg,
-        #1677ff,
-        #e91e3a
-    );
-
+    background: linear-gradient(90deg, #1677ff, #e91e3a);
     border-color: transparent;
-
     transform: translateY(-3px);
-
-    box-shadow:
-        0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-
 
 /* =========================
    NAV TOGGLE (HAMBURGER)
 ========================= */
 
 .nav-toggle {
-    display: none;
-
+    display: none; /* Hidden on desktop */
     background: rgba(255, 255, 255, 0.08);
-
     border: 1px solid rgba(255, 255, 255, 0.18);
-
     color: white;
-
     font-size: 22px;
-
     width: 46px;
-
     height: 46px;
-
     border-radius: 8px;
-
     cursor: pointer;
-
     backdrop-filter: blur(8px);
 }
-
 
 /* =========================
    HERO
@@ -149,20 +105,13 @@ nav a:hover {
 
 .hero {
     min-height: 80vh;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     position: relative;
-
     overflow: hidden;
-
     text-align: center;
 }
-
 
 /* =========================
    MAIN CIRCULAR IMAGE
@@ -170,24 +119,14 @@ nav a:hover {
 
 .hero-image {
     position: absolute;
-
     width: 650px;
-
     height: 650px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     opacity: 0.30;
-
     z-index: 1;
-
-    box-shadow:
-        0 0 100px rgba(30, 120, 255, 0.35),
-        0 0 150px rgba(255, 30, 60, 0.20);
+    box-shadow: 0 0 100px rgba(30, 120, 255, 0.35), 0 0 150px rgba(255, 30, 60, 0.20);
 }
-
 
 /* =========================
    HERO CONTENT
@@ -195,14 +134,10 @@ nav a:hover {
 
 .hero-content {
     position: relative;
-
     z-index: 2;
-
     max-width: 900px;
-
     padding: 20px;
 }
-
 
 /* =========================
    MAIN TITLE
@@ -210,38 +145,15 @@ nav a:hover {
 
 .hero h1 {
     font-size: 60px;
-
     margin-bottom: 20px;
-
     letter-spacing: 3px;
-
     text-transform: uppercase;
-
-    text-shadow:
-        0 4px 20px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
-
-/* BIG - WHITE */
-
-.hero h1 .big {
-    color: white;
-}
-
-
-/* SOUND - RED */
-
-.hero h1 .sound {
-    color: #ff304f;
-}
-
-
-/* ENTERTAINMENT - BLUE */
-
-.hero h1 .entertainment {
-    color: #1683ff;
-}
-
+.hero h1 .big { color: white; }
+.hero h1 .sound { color: #ff304f; }
+.hero h1 .entertainment { color: #1683ff; }
 
 /* =========================
    DESCRIPTION
@@ -249,17 +161,11 @@ nav a:hover {
 
 .hero p {
     font-size: 20px;
-
     color: #e1e8f5;
-
     margin-bottom: 30px;
-
     line-height: 1.6;
-
-    text-shadow:
-        0 2px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
-
 
 /* =========================
    BUTTON
@@ -267,39 +173,21 @@ nav a:hover {
 
 .hero button {
     padding: 14px 32px;
-
     border: none;
-
     border-radius: 30px;
-
-    background: linear-gradient(
-        90deg,
-        #1677ff,
-        #e91e3a
-    );
-
+    background: linear-gradient(90deg, #1677ff, #e91e3a);
     color: white;
-
     font-size: 16px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: 0.3s ease;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
-
 
 .hero button:hover {
     transform: scale(1.05);
-
-    box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
 }
-
 
 /* =========================
    HERO QUOTE
@@ -307,93 +195,66 @@ nav a:hover {
 
 .hero-quote {
     position: absolute;
-
     top: 50%;
-
     left: 7%;
-
     transform: translateY(-50%);
-
     max-width: 260px;
-
     z-index: 5;
-
     text-align: left;
 }
 
-
 .hero-quote blockquote {
     position: relative;
-
     font-size: 17px;
-
     font-style: italic;
-
     line-height: 1.6;
-
     color: #e1e8f5;
-
     padding: 20px 20px 20px 28px;
-
     border-left: 3px solid #1677ff;
-
     background: rgba(255, 255, 255, 0.06);
-
     border-radius: 0 12px 12px 0;
-
     backdrop-filter: blur(10px);
-
-    text-shadow:
-        0 2px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
-
 
 .hero-quote blockquote::before {
     content: "\201C";
-
     position: absolute;
-
     top: -10px;
-
     left: 8px;
-
     font-size: 60px;
-
     font-style: normal;
-
     color: #ff304f;
-
     opacity: 0.5;
-
     line-height: 1;
 }
 
-
-/* CEO photo resting on bottom-left of the quote */
-
-.hero-quote-ceo {
-    position: absolute;
-
-    bottom: -20px;
-
-    left: 20px;
-
-    width: 70px;
-
-    height: 70px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border: 3px solid #1677ff;
-
-    box-shadow:
-        0 0 20px rgba(0, 0, 0, 0.5);
-
-    z-index: 6;
+/* --- FIXED AUTHOR SECTION --- */
+.quote-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px; /* Space between quote and author */
+    padding-left: 10px;
 }
 
+.hero-quote-ceo {
+    position: static; /* Removed absolute positioning to prevent text overlap */
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #1677ff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0; /* Prevents image from squishing */
+}
+
+.author-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e1e8f5;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
 
 /* =========================
    HERO ICONS
@@ -401,98 +262,56 @@ nav a:hover {
 
 .hero-icons {
     position: absolute;
-
     top: 50%;
-
     right: 10%;
-
     transform: translateY(-50%);
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
-
     z-index: 5;
 }
 
-
-/* Individual icon box */
-
 .hero-icon {
     width: 90px;
-
     height: 90px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 6px;
-
     border-radius: 12px;
-
     background: rgba(255, 255, 255, 0.08);
-
     border: 1px solid rgba(255, 255, 255, 0.25);
-
     text-decoration: none;
-
     color: white;
-
     backdrop-filter: blur(10px);
-
     transition: all 0.3s ease;
 }
-
 
 .hero-icon i {
     font-size: 26px;
 }
 
-
 .hero-icon-label {
     font-size: 10px;
-
     font-weight: 600;
-
     text-align: center;
-
     line-height: 1.2;
-
     padding: 0 4px;
 }
 
-
-/* Icon hover */
-
 .hero-icon:hover {
     transform: scale(1.08);
-
-    background: linear-gradient(
-        135deg,
-        #1677ff,
-        #e91e3a
-    );
-
+    background: linear-gradient(135deg, #1677ff, #e91e3a);
     border-color: transparent;
-
-    box-shadow:
-        0 0 25px rgba(22, 119, 255, 0.4);
+    box-shadow: 0 0 25px rgba(22, 119, 255, 0.4);
 }
 
-
 /* =========================
-   TABLETS
+   TABLETS (Max-width 900px)
 ========================= */
 
 @media (max-width: 900px) {
-
     header {
         padding: 20px 4%;
     }
@@ -503,7 +322,6 @@ nav a:hover {
 
     nav a {
         padding: 9px 12px;
-
         font-size: 14px;
     }
 
@@ -513,13 +331,11 @@ nav a:hover {
 
     .hero-icons {
         right: 5%;
-
         gap: 14px;
     }
 
     .hero-icon {
         width: 75px;
-
         height: 75px;
     }
 
@@ -533,171 +349,202 @@ nav a:hover {
 
     .hero-quote {
         left: 4%;
-
         max-width: 200px;
     }
 
     .hero-quote blockquote {
         font-size: 15px;
-
         padding: 16px 16px 16px 22px;
     }
-
+    
     .hero-quote-ceo {
-        width: 60px;
-
-        height: 60px;
-
-        bottom: -15px;
-
-        left: 16px;
+        width: 45px;
+        height: 45px;
     }
-
+    
+    .author-name {
+        font-size: 13px;
+    }
 }
 
-
 /* =========================
-   MOBILE
+   MOBILE (Max-width 768px)
 ========================= */
 
 @media (max-width: 768px) {
 
     header {
         flex-direction: row;
-
         justify-content: space-between;
-
         padding: 20px;
     }
-
 
     .nav-toggle {
         display: block;
     }
 
-
     nav {
         position: absolute;
-
         top: 100%;
-
         left: 0;
-
         right: 0;
-
         flex-direction: column;
-
         align-items: stretch;
-
         gap: 0;
-
         background: rgba(8, 10, 20, 0.97);
-
         backdrop-filter: blur(12px);
-
         max-height: 0;
-
         overflow: hidden;
-
         transition: max-height 0.35s ease;
-
         z-index: 20;
     }
-
 
     nav.open {
         max-height: 400px;
     }
 
-
     nav a {
         text-align: center;
-
         padding: 16px;
-
         border-radius: 0;
-
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-
+    /* --- HERO MOBILE LAYOUT FIX --- */
     .hero {
-        min-height: 75vh;
-
+        min-height: auto; 
         flex-direction: column;
-
-        gap: 24px;
-
-        padding: 40px 20px;
+        gap: 30px;
+        padding: 60px 20px 40px; 
+        position: relative;
+        overflow: visible; 
     }
 
-
-    /* =========================
-       MOBILE ORDER
-    ========================= */
-
+    /* 1. Hero Content (Title, Button) */
     .hero-content {
         order: 1;
-    }
-
-
-    .hero-icons {
-        order: 2;
-
-        position: static;
-
-        transform: none;
-
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 12px;
-
-        margin: 0 auto;
-    }
-
-
-    .hero-quote {
-        order: 3;
-
         position: relative;
-
-        top: auto;
-
-        left: auto;
-
-        transform: none;
-
-        max-width: 90%;
-
-        margin: 0 auto 30px;
-
-        text-align: center;
+        z-index: 2; 
+        padding: 0;
+        background: none;
     }
-
 
     .hero h1 {
         font-size: 40px;
-
         letter-spacing: 2px;
     }
-
 
     .hero p {
         font-size: 17px;
     }
 
-
+    /* 2. Hero Image (Centered Behind Text) */
     .hero-image {
+        position: absolute;
+        top: 40%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 450px;
-
         height: 450px;
+        opacity: 0.20; 
+        z-index: 0; 
+        pointer-events: none; 
     }
 
+    /* 3. Hero Icons Grid */
+    .hero-icons {
+        order: 2;
+        position: relative; 
+        transform: none;
+        top: auto;
+        right: auto;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px; 
+        z-index: 2;
+    }
 
     .hero-icon {
-        width: 70px;
+        width: 100%; 
+        height: auto;
+        aspect-ratio: 1 / 1; 
+    }
 
-        height: 70px;
+    .hero-icon i {
+        font-size: 24px;
+    }
+
+    .hero-icon-label {
+        font-size: 10px;
+    }
+
+    /* 4. Hero Quote */
+    .hero-quote {
+        order: 3;
+        position: relative; 
+        top: auto;
+        left: auto;
+        transform: none;
+        max-width: 100%;
+        margin: 20px auto 40px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .hero-quote blockquote {
+        text-align: left;
+        font-size: 15px;
+        padding: 20px 20px 20px 28px;
+    }
+}
+
+/* =========================
+   SMALL PHONES (Max-width 480px)
+========================= */
+
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 40px 15px 30px;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        width: 320px;
+        height: 320px;
+        top: 35%; 
+    }
+
+    .hero-icons {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        max-width: 320px;
+    }
+
+    .hero-icon {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     .hero-icon i {
@@ -705,107 +552,24 @@ nav a:hover {
     }
 
     .hero-icon-label {
-        font-size: 8px;
+        font-size: 9px;
     }
-
-
-    .hero-quote blockquote {
-        text-align: left;
-    }
-
-
-    .hero-quote-ceo {
-        width: 55px;
-
-        height: 55px;
-
-        bottom: -14px;
-
-        left: 12px;
-    }
-
-}
-
-
-/* =========================
-   SMALL PHONES
-========================= */
-
-@media (max-width: 480px) {
-
-    .logo img {
-        width: 65px;
-
-        height: 65px;
-    }
-
-
-    nav a {
-        font-size: 14px;
-    }
-
-
-    .hero h1 {
-        font-size: 30px;
-
-        line-height: 1.2;
-    }
-
-
-    .hero p {
-        font-size: 15px;
-    }
-
-
-    .hero-image {
-        width: 350px;
-
-        height: 350px;
-    }
-
-
-    .hero-icons {
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 10px;
-    }
-
-
-    .hero-icon {
-        width: 65px;
-
-        height: 65px;
-    }
-
-    .hero-icon i {
-        font-size: 18px;
-    }
-
-    .hero-icon-label {
-        font-size: 7px;
-    }
-
 
     .hero button {
         padding: 12px 26px;
     }
 
-
     .hero-quote blockquote {
         font-size: 14px;
-
-        padding: 14px 14px 14px 20px;
+        padding: 16px 16px 16px 22px;
     }
-
-
+    
     .hero-quote-ceo {
-        width: 48px;
-
-        height: 48px;
-
-        bottom: -12px;
-
-        left: 10px;
+        width: 40px;
+        height: 40px;
     }
-
+    
+    .author-name {
+        font-size: 13px;
+    }
 }
