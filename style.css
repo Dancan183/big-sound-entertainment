@@ -114,29 +114,37 @@ nav a:hover {
 }
 
 /* =========================
+   HERO CONTENT (Anchors the image)
+========================= */
+
+.hero-content {
+    position: relative; /* Crucial: anchors the absolute image */
+    z-index: 2;
+    max-width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
    MAIN CIRCULAR IMAGE
 ========================= */
 
 .hero-image {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly centers inside .hero-content */
     width: 650px;
     height: 650px;
     object-fit: cover;
     border-radius: 50%;
     opacity: 0.30;
-    z-index: 1;
+    z-index: -1; /* Sits behind the text */
     box-shadow: 0 0 100px rgba(30, 120, 255, 0.35), 0 0 150px rgba(255, 30, 60, 0.20);
-}
-
-/* =========================
-   HERO CONTENT
-========================= */
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    padding: 20px;
+    pointer-events: none; /* Prevents the image from blocking clicks */
 }
 
 /* =========================
@@ -234,19 +242,19 @@ nav a:hover {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 15px; /* Space between quote and author */
+    margin-top: 15px; 
     padding-left: 10px;
 }
 
 .hero-quote-ceo {
-    position: static; /* Removed absolute positioning to prevent text overlap */
+    position: static; 
     width: 55px;
     height: 55px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #1677ff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    flex-shrink: 0; /* Prevents image from squishing */
+    flex-shrink: 0; 
 }
 
 .author-name {
@@ -420,13 +428,14 @@ nav a:hover {
         overflow: visible; 
     }
 
-    /* 1. Hero Content (Title, Button) */
+    /* 1. Hero Content (Title, Button, Image wrapper) */
     .hero-content {
         order: 1;
         position: relative;
         z-index: 2; 
         padding: 0;
         background: none;
+        width: 100%;
     }
 
     .hero h1 {
@@ -438,17 +447,12 @@ nav a:hover {
         font-size: 17px;
     }
 
-    /* 2. Hero Image (Centered Behind Text) */
+    /* 2. Hero Image (Now anchored to the text block) */
     .hero-image {
-        position: absolute;
-        top: 40%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 450px;
         height: 450px;
         opacity: 0.20; 
-        z-index: 0; 
-        pointer-events: none; 
+        /* No need for top/left/transform here as it inherits base styles */
     }
 
     /* 3. Hero Icons Grid */
@@ -532,7 +536,7 @@ nav a:hover {
     .hero-image {
         width: 320px;
         height: 320px;
-        top: 35%; 
+        /* No top/left needed here anymore */
     }
 
     .hero-icons {
