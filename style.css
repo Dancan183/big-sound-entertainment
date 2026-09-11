@@ -120,6 +120,33 @@ nav a:hover {
 
 
 /* =========================
+   NAV TOGGLE (HAMBURGER)
+========================= */
+
+.nav-toggle {
+    display: none;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    color: white;
+
+    font-size: 22px;
+
+    width: 46px;
+
+    height: 46px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =========================
    HERO
 ========================= */
 
@@ -282,7 +309,7 @@ nav a:hover {
 ========================= */
 
 .hero-quote {
-    position: relative;
+    position: absolute;
 
     top: 50%;
 
@@ -305,7 +332,7 @@ nav a:hover {
 
     font-style: italic;
 
-    line-height: 1.6;
+    line-height: 2.0;
 
     color: #e1e8f5;
 
@@ -350,9 +377,9 @@ nav a:hover {
 .hero-quote-ceo {
     position: absolute;
 
-    bottom: -20px;
+    bottom: -50px;
 
-    left: 20px;
+    left: 5px;
 
     width: 70px;
 
@@ -539,27 +566,61 @@ nav a:hover {
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
+        flex-direction: row;
 
-        gap: 20px;
+        justify-content: space-between;
 
         padding: 20px;
     }
 
 
+    .nav-toggle {
+        display: block;
+    }
+
+
     nav {
-        flex-wrap: wrap;
+        position: absolute;
 
-        justify-content: center;
+        top: 100%;
 
-        gap: 10px;
+        left: 0;
+
+        right: 0;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        background: rgba(8, 10, 20, 0.97);
+
+        backdrop-filter: blur(12px);
+
+        max-height: 0;
+
+        overflow: hidden;
+
+        transition: max-height 0.35s ease;
+
+        z-index: 20;
+    }
+
+
+    nav.open {
+        max-height: 400px;
     }
 
 
     nav a {
-        font-size: 14px;
+        text-align: center;
 
-        padding: 9px 12px;
+        padding: 16px;
+
+        border-radius: 0;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
 
@@ -663,15 +724,8 @@ nav a:hover {
     }
 
 
-    nav {
-        gap: 7px;
-    }
-
-
     nav a {
-        font-size: 13px;
-
-        padding: 8px 10px;
+        font-size: 14px;
     }
 
 

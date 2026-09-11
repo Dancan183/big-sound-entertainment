@@ -18,7 +18,11 @@
             <img src="images/logo.jpeg" alt="Website Logo">
         </div>
 
-        <nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
             <a href="#about">About</a>
             <a href="#services">Our Services</a>
             <a href="#music">Dj Mixes</a>
@@ -33,20 +37,26 @@
 
         <section class="hero">
 
+            <!-- Quote on the left -->
             <div class="hero-quote">
                 <blockquote>
                     Our work is an "art", part of the show business, the business of building entertainment.
-                    <p> CEO Jairus  Nyakundi</p>
+                    <br>
+                    CEO Jairus Nyakundi
                 </blockquote>
-                <img src="images/CEO.jpg" alt="CEO" class="hero-quote-ceo"
-    >
+
+                <img
+                    src="images/ceo.jpg"
+                    alt="CEO Jairus Nyakundi"
+                    class="hero-quote-ceo"
+                >
             </div>
 
 
             <!-- Main circular image -->
-            <img 
-                src="images/image1.jpg" 
-                alt="Big Sound Entertainment" 
+            <img
+                src="images/image1.jpg"
+                alt="Big Sound Entertainment"
                 class="hero-image"
             >
 
@@ -72,7 +82,6 @@
 
 
             <!-- Icons on the right of the circle -->
-
             <div class="hero-icons">
 
                 <a href="#services" class="hero-icon">
@@ -92,7 +101,7 @@
 
                 <a href="#services" class="hero-icon">
                     <i class="fa-solid fa-headphones"></i>
-                    <span class="hero-icon-label">Audio Recording </span>
+                    <span class="hero-icon-label">Audio Coverage</span>
                 </a>
 
                 <a href="#services" class="hero-icon">
@@ -104,19 +113,24 @@
                     <i class="fa-solid fa-record-vinyl"></i>
                     <span class="hero-icon-label">MC's & DJ's</span>
                 </a>
+
                 <a href="#services" class="hero-icon">
                     <i class="fa-solid fa-volume-high"></i>
-                    <span class="hero-icon-label">Sound System for Hire</span>
+                    <span class="hero-icon-label">Sound System Hire</span>
                 </a>
+
                 <a href="#services" class="hero-icon">
                     <i class="fa-solid fa-plug"></i>
-                    <span class="hero-icon-label">Electronic Gadgets</span>
+                    <span class="hero-icon-label">Electronics Store</span>
                 </a>
 
             </div>
+
         </section>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
