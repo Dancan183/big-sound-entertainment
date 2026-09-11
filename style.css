@@ -4,12 +4,9 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: Arial, sans-serif;
-
     color: white;
-
     min-height: 100vh;
 
     background: linear-gradient(
@@ -635,6 +632,49 @@ nav a:hover {
     }
 
 
+    /* =========================
+       MOBILE ORDER
+    ========================= */
+
+    .hero-content {
+        order: 1;
+    }
+
+
+    .hero-icons {
+        order: 2;
+
+        position: static;
+
+        transform: none;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 12px;
+
+        margin: 0 auto;
+    }
+
+
+    .hero-quote {
+        order: 3;
+
+        position: relative;
+
+        top: auto;
+
+        left: auto;
+
+        transform: none;
+
+        max-width: 90%;
+
+        margin: 0 auto 30px;
+
+        text-align: center;
+    }
+
+
     .hero h1 {
         font-size: 40px;
 
@@ -654,19 +694,6 @@ nav a:hover {
     }
 
 
-    .hero-icons {
-        position: static;
-
-        transform: none;
-
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 12px;
-
-        margin: 0 auto;
-    }
-
-
     .hero-icon {
         width: 70px;
 
@@ -679,17 +706,6 @@ nav a:hover {
 
     .hero-icon-label {
         font-size: 8px;
-    }
-
-
-    .hero-quote {
-        position: relative;
-
-        max-width: 90%;
-
-        margin: 0 auto 30px;
-
-        text-align: center;
     }
 
 
