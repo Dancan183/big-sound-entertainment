@@ -622,9 +622,7 @@ nav a:hover {
 
 
     .hero-quote {
-        position: static;
-
-        transform: none;
+        position: relative;
 
         max-width: 90%;
 
